@@ -1,0 +1,623 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="/assests/facebook.png">
+  <title>Facebook</title>
+</head>
+
+<body class="bg-gray-100 font-sans box-border">
+  <nav class="flex fixed w-full z-10  bg-white h-16 mt-0  justify-between items-center ">
+    <!-- left side of navbar -->
+    <div class="flex ml-4 items-center justify-between w-[25%]">
+      <button>
+        <!-- <h1 class="text-3xl text-blue-500">FaceBook</h1> -->
+        <img src="/assests/facebook.png" alt="">
+      </button>
+      <div class="  px-2">
+        <div class="max-w-md mx-auto rounded-lg  md:max-w-xl">
+          <div class="md:flex">
+            <div class="w-full">
+
+              <div class="relative ">
+                <i class="absolute fa fa-search text-gray-400 top-3 left-4"></i>
+                <input type="text"
+                  class="outline-none bg-slate-100 h-10 w-full px-12 rounded-3xl hover:cursor-pointer"
+                  name="" placeholder="Search Facebook">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- right side of navbar -->
+    <div class="flex items-center justify-between w-[40%] ">
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-home absolute top-3 left-3"></i>
+      </button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-video absolute top-3 left-3"></i>
+        <span
+          class="bg-red-600 text-white px-1  rounded-xl absolute top-[-5px] right-[-15px]">9+</span>
+      </button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-cart-arrow-down absolute top-3 left-3"></i></button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-people-group absolute top-3 left-3"></i></button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-gamepad absolute top-3 left-3"></i></button>
+    </div>
+    <!--Endd of navbar  -->
+
+    <div class="w-[25%]  flex items-center justify-around ">
+      <button class="text-xl flex items-center">
+        <img src="/assests/profile.jpg" class="rounded-full h-8 w-8"
+          alt=""><span
+          class="ml-2 text-base font-medium text-gray-700">Õşmąņ</span>
+      </button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-circle-minus absolute top-3 left-3"></i></button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-message absolute top-3 left-3"></i></button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-bell absolute top-3 left-3"></i>
+        <span
+          class="bg-red-600 text-white px-1  rounded-xl absolute top-[-5px] right-[-12px]">5+</span>
+      </button>
+      <button class="bg-gray-200 rounded-full w-10 h-10 relative"><i
+          class="fa fa-phone-flip absolute top-3 left-3"></i></button>
+
+      <!-- Dropdown should go here -->
+      <!-- <svg fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 rs22bh7c jnigpg78 odw8uiq3"><path d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z"></path></svg>s -->
+    </div>
+
+    <!-- End of navbar -->
+  </nav>
+  <!-- Newsfeed Section -->
+  <section class="m-0 flex items-center justify-between flex-row h-[100vh] ">
+    <!-- leftside of newssfeed -->
+    <div
+      class=" top-[5rem] basis-[300px] fixed left-[2rem] h-[88vh] hover:overflow-x-hidden hover:scroll-smooth  flex items-start flex-col gap-3 ">
+      <div
+        class="text-lg flex items-center w-full  gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <img src="/assests/profile.jpg" class="rounded-full h-8 w-8"
+          alt=""><span class="ml-2 text-base">Õşmąņ Ąřįf</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <i class="fa fa-user-friends  text-blue-500"></i>
+        <span class="ml-2 text-base">Friends</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <i class="fa fa-people-group  text-blue-500"></i><span
+          class="ml-2 text-base">Groups</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <i class="fa fa-cart-arrow-down  text-blue-500 "></i><span
+          class="ml-2 text-base">Market
+          Place</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <i class="fa fa-television  text-blue-500 "></i><span
+          class="ml-2 text-base">Watch</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <i class="fa fa-memory   text-blue-500 "></i><span
+          class="ml-2 text-base">Memory</span>
+      </div>
+      <div
+        class="text-lg flex items-center w-full gap-4 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+        <select
+          class=" font-extrabold  text-blue-500 bg-gray-200 focus:outline-none active:outline-none outline-none"></select><span
+          class="ml-2 text-base">See more</span>
+      </div>
+      <hr class="border-1 bg-gray-400 border-gray-400 w-full">
+
+      <!-- Shortcuts -->
+      <div class="flex flex-col gap-5 w-full">
+        <div class="flex items-center justify-between">
+          <h1 class="text-gray-500 font-bold text-xl">Your Shortcuts</h1>
+          <button class="text-blue-500  hover:underline-offset-1">Edit</button>
+        </div>
+
+        <div
+          class="text-lg flex items-center w-full gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/8ball.png" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">8 ball pool</span>
+        </div>
+        <div
+          class="text-lg flex items-center w-full gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/angry.png" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Angry Birds</span>
+        </div>
+        <div
+          class="text-lg flex items-center w-full gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/cards.png" class="rounded-full h-8 w-8 "
+            alt=""><span class="ml-2 text-lg">Teen Patti Gold</span>
+        </div>
+        <div
+          class="text-lg flex items-center w-full gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/cat.png" class="rounded-full h-8 w-8 " alt=""><span
+            class="ml-2 text-lg">Cats Adoption Point</span>
+        </div>
+        <div
+          class="text-lg flex items-center w-full gap-2 py-2 px-2 hover:bg-gray-300 cursor-pointer rounded-lg">
+          <select
+            class=" font-extrabold  text-gray-900 bg-gray-500 rounded-full focus:outline-none active:outline-none outline-none"></select><span
+            class="ml-2 text-lg">See more</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- center of newsfeed -->
+    <div class="h-full max-w-[804px] absolute top-[5rem] left-[20%] min-w-[804px] ">
+      <!-- story field -->
+      <div class="w-100 h-[18rem] relative ">
+        <div class="flex flex-row items-center gap-2 w-[700px] h-full  m-auto ">
+          <!-- Your story -->
+          <div
+            class="flex flex-col items-center justify-between basis-[20%] h-[80%] shadow-gray-100 shadow-xl bg-white rounded-xl relative hover:bg-gray-300">
+
+            <img src="/assests/profile.jpg"
+              class=" h-[80%] bg-cover bg-center  rounded-t-lg" alt="">
+            <div
+              class="absolute bottom-[40px] flex items-center justify-center left-[45px]  bg-white rounded-full">
+              <div
+                class=" w-10 h-10 rounded-full flex items-center justify-center ">
+                <i class="fa fa-plus-circle  fa-2xl  z-10  text-blue-500 "></i>
+              </div>
+            </div>
+            <h1 class="text-center mt-7 text-gray-800 font-bold mb-3">Create
+              Story</h1>
+          </div>
+
+          <div
+            class="basis-[20%] h-[80%] bg-white rounded-xl relative shadow-gray-100 shadow-lg ">
+            <img src="/assests/img18.jpg" class="bg-cover h-full rounded-xl "
+              alt="">
+            <span
+              class="w-10 h-10 rounded-full border-4 border-blue-500 bg-white absolute top-5 left-4">
+              <img src="/assests/icons8-cartoon-boy-65.png" class="bg-cover"
+                alt=""></span>
+            <h1 class="absolute bottom-0 left-5 text-gray-50 font-bold mb-3">
+              Muhammad Arif</h1>
+          </div>
+          <div
+            class="basis-[20%] h-[80%] bg-white rounded-xl relative shadow-gray-100 shadow-xl ">
+            <img src="/assests/img17.jpg" class="bg-cover h-full rounded-xl "
+              alt="">
+            <span
+              class="w-10 h-10 rounded-full border-4 border-blue-500 bg-white absolute top-5 left-4">
+              <img src="/assests/icons8-cartoon-64.png" class="bg-cover"
+                alt=""></span>
+            <h1 class="absolute bottom-0 left-5 text-gray-50 font-bold mb-3">
+              Adnan Arif</h1>
+          </div>
+          <div
+            class="basis-[20%] h-[80%] bg-white rounded-xl relative shadow-gray-100 shadow-xl ">
+            <img src="/assests/img20.jpg" class="bg-cover h-full rounded-xl "
+              alt="">
+            <span
+              class="w-10 h-10 rounded-full border-4 border-blue-500 bg-white absolute top-5 left-4">
+              <img src="/assests/icons8-user-male-48.png" class="bg-cover"
+                alt=""></span>
+            <h1 class="absolute bottom-0 left-5 text-white font-bold mb-3">
+              Faizan Arif</h1>
+          </div>
+          <div
+            class="basis-[20%] h-[80%] bg-white rounded-xl relative  shadow-gray-100 shadow-xl ">
+            <img src="/assests/img22.jpg" class="bg-cover h-full rounded-xl "
+              alt="">
+            <span
+              class="w-10 h-10 rounded-full border-4 border-blue-500 bg-white absolute top-5 left-4">
+              <img src="/assests/icons8-cartoon-boy-48.png"
+                class="bg-cover bg-center" alt=""></span>
+            <h1 class="absolute bottom-0 left-5 text-gray-50 font-bold mb-3">
+              Angry Panda</h1>
+          </div>
+
+        </div>
+        <button
+          class="absolute top-[40%] right-8 w-10 h-10 bg-white flex items-center justify-center shadow-lg shadow-gray-300 rounded-full"><i
+            class="fa fa-arrow-right text-gray-500"></i></button>
+      </div>
+      <!-- Newfeed goes here -->
+      <div class="w-[600px]   mx-auto flex flex-col gap-5 items-center">
+        <div
+          class="bg-white rounded-lg shadow-lg shadow-gray-300 w-full flex flex-col items-center justify-center  gap-5">
+          <div
+            class="mt-3 flex w-[90%] flex-row items-center justify-center  gap-4">
+            <span>
+              <img src="/assests/profile.jpg"
+                class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+
+            <input type="text"
+              class="bg-gray-200 w-[90%] rounded-3xl p-3 placeholder:text-gray-600 "
+              placeholder="What's on your mind, Osman?">
+          </div>
+          <hr class="border-1 border-gray-200 w-[85%] mx-auto">
+          <div class="flex flex-row items-center justify-center w-full gap-5">
+            <button class="basis-[30%] h-8 flex items-center justify-center">
+              <i class="fa fa-video-camera  text-red-500"></i><span
+                class="ml-2 text-gray-500 font-medium">Live video</span>
+            </button>
+            <button class="basis-[30%] h-10 flex items-center justify-center">
+              <i class="fa fa-photo-film  text-green-500"></i><span
+                class="ml-2 text-gray-500 font-medium">Photo/video</span>
+            </button>
+            <button class="basis-[30%] h-10 flex items-center justify-center">
+              <i class="fa fa-face-frown  text-orange-500"></i><span
+                class="ml-2 text-gray-500 font-medium">Feeling/activity</span>
+            </button>
+          </div>
+
+
+        </div>
+
+        <div
+          class="w-full bg-white shadow-lg shadow-gray-300 h-16 rounded-lg flex flex-row items-center  justify-around">
+          <div class="  ">
+            <i class="fa fa-video-camera text-red-500 fa-lg"></i> <span
+              class="text-base font-medium text-gray-500 ml-2 align-middle">Live
+              video</span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/usama.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/adnan.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/faizan.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/afzal.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/attique.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+          <div
+            class="text-lg relative flex items-center   gap-2 py-2   cursor-pointer rounded-lg">
+            <img src="/assests/arif.jpg" class="rounded-full h-8 w-8" alt="">
+            <span
+              class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+          </div>
+
+
+
+
+
+        </div>
+
+        <!-- Post-1 -->
+        <div
+          class=" flex flex-col gap-5 mb-12 bg-white w-full rounded-lg shadow-lg shadow-gray-300">
+          <div class="mt-3 w-[90%] mx-auto">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row gap-3 items-center justify-center"> <img
+                  src="/assests/profile.jpg"
+                  class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+                <div class="flex flex-col items-start justify-center">
+                  <h3 class="text-lg text-gray-700 font-semibold">Osman Arif
+                  </h3>
+                  <p class="text-xs text-gray-500">2d.  <i
+                      class="ml-2 fa fa-globe"></i></p>
+                </div>
+
+                
+              </div>
+              <button><i class="fa text-gray-500 fa-list-ul"></i></button>
+            </div>
+
+          </div>
+
+<img src="/assests/img15.jpg" class="mt-3" alt="">
+
+<div class="w-[90%] flex flex-row mx-auto items-center justify-between">
+  <div class=""><button class=" bg-blue-500 w-6 h-6 rounded-full align-middle text-center" ><i class="fa fa-thumbs-up text-white"></i></button>   <span  class=" w-6 h-6 text-gray-500"> 71k</span> </div>
+
+  <div><button class="text-gray-500 hover:underline">773 Comments</button> <button class="ml-2 text-gray-500 hover:underline">9.5k Shares</button></div>
+
+  
+  </div>
+  <hr class="w-[90%] mx-auto border-1 border-gray-400 ">
+  
+  <div class="w-[90%] mx-auto  flex flex-row justify-around items-center">
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-lg fa-thumbs-up text-gray-500 focus:text-blue-500" ></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Like</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-message fa-lg text-gray-500"></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Comments</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-arrow-circle-right text-gray-500" s></i>  <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Share</span></button>
+  </div>
+        </div>
+        <!-- POst-2 -->
+        <div
+          class=" flex flex-col gap-5 mb-12 bg-white w-full rounded-lg shadow-lg shadow-gray-300">
+          <div class="mt-3 w-[90%] mx-auto">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row gap-3 items-center justify-center"> <img
+                  src="/assests/adnan.jpg"
+                  class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+                <div class="flex flex-col items-start justify-center">
+                  <h3 class="text-lg text-gray-700 font-semibold">Adnan Arif
+                  </h3>
+                  <p class="text-xs text-gray-500">2d.  <i
+                      class="ml-2 fa fa-globe"></i></p>
+                </div>
+
+                
+              </div>
+              <button><i class="fa text-gray-500 fa-list-ul"></i></button>
+            </div>
+
+          </div>
+
+<img src="/assests/img13.jpg" class="mt-3" alt="">
+
+<div class="w-[90%] flex flex-row mx-auto items-center justify-between">
+  <div class=""><button class=" bg-blue-500 w-6 h-6 rounded-full align-middle text-center" ><i class="fa fa-thumbs-up text-white"></i></button>   <span  class=" w-6 h-6 text-gray-500"> 71k</span> </div>
+
+  <div><button class="text-gray-500 hover:underline">773 Comments</button> <button class="ml-2 text-gray-500 hover:underline">9.5k Shares</button></div>
+
+  
+  </div>
+  <hr class="w-[90%] mx-auto border-1 border-gray-400 ">
+  
+  <div class="w-[90%] mx-auto  flex flex-row justify-around items-center">
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-lg fa-thumbs-up text-gray-500 focus:text-blue-500" ></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Like</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-message fa-lg text-gray-500"></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Comments</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-arrow-circle-right text-gray-500" s></i>  <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Share</span></button>
+  </div>
+        </div>
+        <!-- Post-3 -->
+        <div
+          class=" flex flex-col gap-5 mb-12 bg-white w-full rounded-lg shadow-lg shadow-gray-300">
+          <div class="mt-3 w-[90%] mx-auto">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row gap-3 items-center justify-center"> <img
+                  src="/assests/faizan.jpg"
+                  class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+                <div class="flex flex-col items-start justify-center">
+                  <h3 class="text-lg text-gray-700 font-semibold">Faizan Arif
+                  </h3>
+                  <p class="text-xs text-gray-500">2d.  <i
+                      class="ml-2 fa fa-globe"></i></p>
+                </div>
+
+                
+              </div>
+              <button><i class="fa text-gray-500 fa-list-ul"></i></button>
+            </div>
+
+          </div>
+
+<img src="/assests/img17.jpg" class="mt-3" alt="">
+
+<div class="w-[90%] flex flex-row mx-auto items-center justify-between">
+  <div class=""><button class=" bg-blue-500 w-6 h-6 rounded-full align-middle text-center" ><i class="fa fa-thumbs-up text-white"></i></button>   <span  class=" w-6 h-6 text-gray-500"> 71k</span> </div>
+
+  <div><button class="text-gray-500 hover:underline">773 Comments</button> <button class="ml-2 text-gray-500 hover:underline">9.5k Shares</button></div>
+
+  
+  </div>
+  <hr class="w-[90%] mx-auto border-1 border-gray-400 ">
+  
+  <div class="w-[90%] mx-auto  flex flex-row justify-around items-center">
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-lg fa-thumbs-up text-gray-500 focus:text-blue-500" ></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Like</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-message fa-lg text-gray-500"></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Comments</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-arrow-circle-right text-gray-500" s></i>  <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Share</span></button>
+  </div>
+        </div>
+        <!-- post-4 -->
+        <div
+          class=" flex flex-col gap-5 mb-12 bg-white w-full rounded-lg shadow-lg shadow-gray-300">
+          <div class="mt-3 w-[90%] mx-auto">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row gap-3 items-center justify-center"> <img
+                  src="/assests/usama.jpg"
+                  class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+                <div class="flex flex-col items-start justify-center">
+                  <h3 class="text-lg text-gray-700 font-semibold">Usama Rashid
+                  </h3>
+                  <p class="text-xs text-gray-500">2d.  <i
+                      class="ml-2 fa fa-globe"></i></p>
+                </div>
+
+                
+              </div>
+              <button><i class="fa text-gray-500 fa-list-ul"></i></button>
+            </div>
+
+          </div>
+
+<img src="/assests/img19.jpg" class="mt-3" alt="">
+
+<div class="w-[90%] flex flex-row mx-auto items-center justify-between">
+  <div class=""><button class=" bg-blue-500 w-6 h-6 rounded-full align-middle text-center" ><i class="fa fa-thumbs-up text-white"></i></button>   <span  class=" w-6 h-6 text-gray-500"> 71k</span> </div>
+
+  <div><button class="text-gray-500 hover:underline">773 Comments</button> <button class="ml-2 text-gray-500 hover:underline">9.5k Shares</button></div>
+
+  
+  </div>
+  <hr class="w-[90%] mx-auto border-1 border-gray-400 ">
+  
+  <div class="w-[90%] mx-auto  flex flex-row justify-around items-center">
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-lg fa-thumbs-up text-gray-500 focus:text-blue-500" ></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Like</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-message fa-lg text-gray-500"></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Comments</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-arrow-circle-right text-gray-500" s></i>  <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Share</span></button>
+  </div>
+        </div>
+        <!-- -post-5 -->
+        <div
+          class=" flex flex-col gap-5 mb-12 bg-white w-full rounded-lg shadow-lg shadow-gray-300">
+          <div class="mt-3 w-[90%] mx-auto">
+            <div class="flex flex-row items-center justify-between">
+              <div class="flex flex-row gap-3 items-center justify-center"> <img
+                  src="/assests/attique.jpg"
+                  class="bg-cover w-10 h-10 rounded-full" alt=""></span>
+                <div class="flex flex-col items-start justify-center">
+                  <h3 class="text-lg text-gray-700 font-semibold">Attique Ahmad
+                  </h3>
+                  <p class="text-xs text-gray-500">2d.  <i
+                      class="ml-2 fa fa-globe"></i></p>
+                </div>
+
+                
+              </div>
+              <button><i class="fa text-gray-500 fa-list-ul"></i></button>
+            </div>
+
+          </div>
+
+<img src="/assests/img21.jpg" class="mt-3" alt="">
+
+<div class="w-[90%] flex flex-row mx-auto items-center justify-between">
+  <div class=""><button class=" bg-blue-500 w-6 h-6 rounded-full align-middle text-center" ><i class="fa fa-thumbs-up text-white"></i></button>   <span  class=" w-6 h-6 text-gray-500"> 71k</span> </div>
+
+  <div><button class="text-gray-500 hover:underline">773 Comments</button> <button class="ml-2 text-gray-500 hover:underline">9.5k Shares</button></div>
+
+  
+  </div>
+  <hr class="w-[90%] mx-auto border-1 border-gray-400 ">
+  
+  <div class="w-[90%] mx-auto  flex flex-row justify-around items-center">
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-lg fa-thumbs-up text-gray-500 focus:text-blue-500" ></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Like</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-message fa-lg text-gray-500"></i> <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Comments</span></button>
+    <button class="hover:bg-gray-200 py-2 px-8 rounded-md mb-2"><i class="fa fa-arrow-circle-right text-gray-500" s></i>  <span class="ml-2 text-center align-middle text-gray-500 font-semibold text-lg" >Share</span></button>
+  </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- right side of newsfeed -->
+    <div
+      class="flex flex-col gap-5  top-[5rem] max-w-[360px] h-[85vh] mb-[2rem] hover:overflow-x-hidden hover:scroll-smooth  fixed right-[1rem]">
+      <h1 class="text-gray-500 font-medium text-xl">Sponsored</h1>
+      <!-- Sponsered field -->
+      <!-- Image-1 -->
+      <div class="flex flex-row gap-5">
+        <div class="w-[40%] h-32 "><img src="/assests/img5.jpg"
+            class="rounded-xl h-32 bg-cover w-full" alt="">
+
+        </div>
+        <div class=" h-32 flex items-start justify-center gap-1 flex-col ">
+          <h1 class="text-justify">Lorem ipsum dolor sit amet consectetur </h1>
+          <a class="text-gray-500">Lorem ipsum dolor </a>
+        </div>
+
+      </div>
+      <!-- Image-2 -->
+      <div class="flex flex-row gap-5">
+        <div class="w-[40%] h-32 "><img src="/assests/img11.jpg"
+            class="bg-center rounded-xl h-32 bg-cover w-full" alt="">
+
+        </div>
+        <div class=" h-32 flex items-start justify-center gap-1 flex-col ">
+          <h1 class="text-justify">Lorem ipsum dolor sit amet consectetur </h1>
+          <a class="text-gray-500">Lorem ipsum dolor </a>
+        </div>
+
+      </div>
+
+      <!-- Contacts field goes here -->
+      <hr class="border-1 bg-gray-400 border-gray-400 w-[100%]">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-row justify-between">
+          <div>
+            <h1 class="text-gray-500 font-medium text-xl">Contacts</h1>
+          </div>
+          <div class="flex items-center justify-center gap-6">
+            <i class="fa fa-video-camera text-gray-500"></i>
+            <i class="fa fa-search  text-gray-500"></i>
+            <i class="fa fa-list-dots text-gray-500"></i>
+          </div>
+        </div>
+
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/profile.jpg" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Õşmąņ Ąřįf</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/adnan.jpg" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Adnan Arif</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/faizan.jpg" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Faizan Arif</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/arif.jpg"
+            class="rounded-full border-4 border-blue-600 h-8 w-8" alt=""><span
+            class="ml-2 text-lg">Muhammad Arif</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/usama.jpg"
+            class="rounded-full border-4 border-blue-600 h-8 w-8" alt=""><span
+            class="ml-2 text-lg">Usama Rashid</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/attique.jpg" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Attique Ahmad</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+        <div
+          class="text-lg relative flex items-center w-full  gap-2 py-2  hover:bg-gray-300 cursor-pointer rounded-lg">
+          <img src="/assests/afzal.jpg" class="rounded-full h-8 w-8"
+            alt=""><span class="ml-2 text-lg">Muhammad Afzal</span>
+          <span
+            class="absolute bg-green-500 w-3 h-3 rounded-full bottom-1 left-7 border-2 border-gray-50"></span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
